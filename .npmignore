@@ -1,0 +1,10 @@
+.npmignore
+.gitignore
+.vscode/
+node_modules/
+tsconfig.json
+tslint.json
+*.map
+*.ts
+!*.d.ts
+package-lock.json
