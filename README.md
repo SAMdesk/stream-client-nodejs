@@ -20,6 +20,7 @@ const client = new streaming.Client({
     customerName: "source1",
     dataSource: "stream1",
     streamName: "myname",
+    subscriptionName: "sub1",
 });
 client.start();
 client.pipe(process.stdout);

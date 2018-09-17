@@ -11,6 +11,7 @@ export interface IConnection {
     password: string,
     dataSource: string,
     streamName: string,
+    subscriptionName: string,
     customerName: string,
 }
 
@@ -55,7 +56,7 @@ export class Client extends stream.Readable {
     };
 
     private runStream() {
-        const link = `https://${this.connection.customerName}.${this.connection.domain ? this.connection.domain : 'socialgist.com'}/stream/${this.connection.dataSource}_${this.connection.streamName}/subscription/${this.connection.streamName}/part/1/data.json`
+        const link = `https://${this.connection.customerName}.${this.connection.domain ? this.connection.domain : 'socialgist.com'}/stream/${this.connection.dataSource}_${this.connection.streamName}/subscription/${this.connection.subscriptionName}/part/1/data.json`
         const parsedURL = url.parse(link);
         const r = (parsedURL.protocol === 'https:') ? https.request : http.request;
         const req = r({
