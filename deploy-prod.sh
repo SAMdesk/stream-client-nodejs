@@ -9,6 +9,6 @@ while getopts "s:" option; do
   esac
 done
 
-
+npm run build
 npm version $SEMANTIC_VERSION
 npm publish

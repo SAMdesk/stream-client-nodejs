@@ -4,7 +4,7 @@
   "description": "Socilgist stream client for NodeJS",
   "main": "index.js",
   "scripts": {
-    "prepublish": "tsc",
+    "build": "tsc",
     "postversion": "git push && git push --tags"
   },
   "files": [
