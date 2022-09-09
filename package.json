@@ -1,17 +1,13 @@
 {
-  "name": "@socialgist/stream-client",
-  "version": "1.1.0",
-  "description": "Stream client for NodeJS",
+  "name": "@samdesk/stream-client",
+  "version": "1.2.0",
+  "description": "Socilgist stream client for NodeJS",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Effyis/stream-client-nodejs.git"
   },
-  "author": "Ivan Radulovic",
-  "bugs": {
-    "url": "https://github.com/Effyis/stream-client-nodejs/issues"
-  },
-  "homepage": "https://github.com/Effyis/stream-client-nodejs#readme",
+  "author": "Socialgist, forked",
   "devDependencies": {
     "@types/node": "^10.9.4"
   }
