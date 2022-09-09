@@ -2,10 +2,14 @@
   "name": "@samdesk/stream-client",
   "version": "1.5.0",
   "description": "Socilgist stream client for NodeJS",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
+    "prepublish": "tsc",
     "postversion": "git push && git push --tags"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SAMdesk/stream-client-nodejs.git"

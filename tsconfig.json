@@ -5,6 +5,8 @@
     "declaration": true,
     "sourceMap": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "baseUrl": "./"
   }
 }
